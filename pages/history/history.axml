@@ -1,0 +1,25 @@
+<view class="page-history">
+  <list>
+    <view a:for="{{list}}" key="{{item.content}}">
+      <swipe-action
+        index="{{index}}"
+        restore="{{swipeIndex === null || swipeIndex !== index}}"
+        right="{{item.right}}"
+        onRightItemClick="onRightItemClick"
+        onSwipeStart="onSwipeStart"
+        extra="item{{index}}"
+        className="item"
+      >
+        <list-item
+          arrow="horizontal"
+          index="{{index}}"
+          key="items-{{index}}"
+          onClick="onItemClick"
+          last="{{index === list.length - 1}}"
+        >
+          <pull-report topText="体检报告单" bottomText="2018.12.10" type="text" count="3" unit="张"></pull-report>
+        </list-item>
+      </swipe-action>
+    </view>
+  </list>
+</view>

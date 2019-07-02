@@ -1,0 +1,14 @@
+<view class="pull-report" onTap="chooseImage">
+    <view class="text-box">
+      <text class="gn-prompt">{{topText}}</text>
+      <text class="dz-prompt">{{bottomText}}</text>
+    </view>
+    <image src="{{'../../assets/home-pull.png'}}" mode="scaleToFill"/>
+    <view class="more-image" a:if="{{type=='image'}}">
+      <image mode="scaleToFill" src="{{'../../assets/more.png'}}"/>
+    </view>
+    <view class="more-text" a:if="{{type=='text'}}">
+      <text class="count">{{count}}</text>
+      <text class="unit">{{unit}}</text>
+    </view>
+  </view>

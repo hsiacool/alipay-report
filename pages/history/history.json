@@ -1,0 +1,9 @@
+{
+    "defaultTitle":"历史记录",
+    "usingComponents": {
+      "list": "mini-antui/es/list/index",
+      "list-item": "mini-antui/es/list/list-item/index",
+      "swipe-action": "mini-antui/es/swipe-action/index",
+      "pull-report": "/components/pull-report/pull-report"
+    }
+}

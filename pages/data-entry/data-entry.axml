@@ -1,0 +1,53 @@
+<view class="page-data-entry">
+  <view class="data-top">化验结果准确是正确诊断的基础，请务必认真核对和修正，确保无误再上传。</view>
+  <view class="check-date check" onTap="showDate">
+    <text>检查日期</text>
+    <text class="check-right">{{checkTime}}</text>
+  </view>
+  <view class="check-hospital check">
+    <text>检查医院</text>
+    <input placeholder="请输入医院名称" value="{{hospitalName}}" class="check-right"/>
+  </view>
+  <view class="items">
+    
+    <view class="tbody">
+       <view class="help-item" a:for="{{indexArray}}"  key="{{index}}"  a:for-item="item">
+        <view class="help-title" onTap="clickHandle" data-index='{{index}}'>
+          <view class="title-text">
+            <view class="empty"></view>
+            <text class="item-left">{{item.checkName}}</text>
+            <image mode="scaleToFill" src="{{'../../assets/gengduo.png'}}" class="right-img"/>
+            <text class="item-right">{{item.indexArraySize}}项</text>
+          </view>
+        </view>
+        <view class="help-content" a:if="{{showIndex == index}}">
+          <view class="thead">
+            <view class="thead-item">项目</view>
+            <view class="thead-item">结果</view>
+            <view class="thead-item">单位</view>
+            <view class="thead-item">范围</view>
+          </view>
+          <view class="thead" a:for="{{item.indexArray}}"  a:for-item="sItem">
+            <view class="thead-item">{{sItem.name}}</view>
+            <view class="thead-item">{{sItem.value}}</view>
+            <view class="thead-item">{{sItem.unit}}</view>
+            <view class="thead-item">{{sItem.referenceValue}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="empty"></view>
+  <view class="add">
+    <button onTap="add">点击添加</button>
+    <text>可添加您的报告单上未识别遗漏指标</text>
+  </view>
+  <view class="bigImg">
+    <image src="{{item}}" mode="scaleToFill" onTap="previewImg" a:for="{{urls}}" data-index="{{index}}"/>
+  </view>
+</view>
+<cover show="{{show}}" width="600rpx" height="800rpx"></cover>
+<view class="bottom">
+  <button class="save-btn">保存</button>
+  <button class="unscramble-btn">一键解读</button>
+</view>

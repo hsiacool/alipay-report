@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/history/history", 
+    "pages/data-entry/data-entry",
+    "pages/report-interpre/report-interpre"
+  ],
+  "window": {
+    "defaultTitle": "Todo App",
+    "titleBarColor": "#fff"
+  }
+}

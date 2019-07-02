@@ -1,0 +1,24 @@
+<view class="page-home">
+  <view class="home-top">
+    <text>上传报告单</text>
+  </view>
+  <view class="pull-report" onTap="chooseImage">
+    <view class="text-box">
+      <text class="gn-prompt">拍照录入</text>
+      <text class="dz-prompt">点此上传您的体检报告照片</text>
+    </view>
+    <image src="{{'../../assets/home-pull.png'}}" mode="scaleToFill"/>
+    <view class="more">
+      <image mode="scaleToFill" src="{{'../../assets/more.png'}}"/>
+    </view>
+  </view>
+  <view class="cover" a:if="{{showCover}}">
+    <view class="cover-box">
+      <image mode="scaleToFill" src="{{'../../assets/guanbi.png'}}" class="close" onTap="hideCover"/>
+      <image mode="scaleToFill" class="bgImg" src="{{'../../assets/chenggong.png'}}"/>
+      <text class="success-prompt">上传成功！</text>
+      <button type="primary" class="identify-btn" onTap="navTo">立即识别</button>
+      <button type="primary" class="continue-btn" onTap="chooseImage">继续上传</button>
+    </view>
+  </view>
+</view>

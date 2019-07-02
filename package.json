@@ -1,0 +1,15 @@
+{
+  "name": "health-report",
+  "version": "1.0.0",
+  "description": "Todos用来演示如何使用小程序来实现一个简单的任务管理。",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "mini-antui": "^0.4.27"
+  }
+}

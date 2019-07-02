@@ -1,0 +1,39 @@
+<view class="page-interpre">
+  <tabs
+    tabs="{{tabs}}"
+    showPlus="{{false}}"
+    activeCls="activeT"
+    onTabClick="handleTabClick"
+    onChange="handleTabChange"
+    activeTab="{{activeTab}}"
+    tabBarUnderlineColor="#12A5FF"
+  >
+    <!-- <block a:for="{{tabs}}">
+      <tab-content key="{{index}}">
+        <view class="tab-content">content of {{item.title}}</view>
+      </tab-content>
+    </block> -->
+    <block>
+      <tab-content key="{{index}}">
+        <view class="tab-content">
+          <view class="con-title">
+            <text>异常指标</text>
+          </view>
+          <view class="con-con">
+            <view class="con-item"></view>
+            <view class="con-item"></view>
+            <view class="con-item"></view>
+            <view class="con-item"></view>
+            <view class="con-item"></view>
+            <view class="con-item"></view>
+          </view>
+        </view>
+      </tab-content>
+    </block>
+    <block>
+      <tab-content key="{{index}}">
+        <view class="tab-content">content of 2</view>
+      </tab-content>
+    </block>
+  </tabs>
+</view>

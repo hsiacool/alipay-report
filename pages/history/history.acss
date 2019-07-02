@@ -1,0 +1,28 @@
+.page-history{
+  width:100%;
+}
+.am-list{
+  width:100%;
+}
+.item{
+  margin:0 20rpx;
+}
+.am-list-arrow{
+  display:none;
+}
+.item .am-swipe-btn-delete{
+  background-color:#fff;
+}
+.item .am-swipe-btn-delete image{
+  width:70rpx;
+  height:70rpx;
+}
+.am-list-content{
+  padding:0;
+}
+.am-list-item{
+  padding-left:0;
+}
+.am-list-line{
+  padding-right:0;
+}

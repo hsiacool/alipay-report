@@ -1,0 +1,5 @@
+<view class="cover" a:if="{{show}}">
+  <view class="box" style="width:{{width}};height:{{height}}">
+    
+  </view>
+</view>
